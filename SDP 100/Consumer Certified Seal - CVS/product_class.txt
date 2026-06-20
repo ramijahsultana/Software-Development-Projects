@@ -1,0 +1,32 @@
+class Product
+{
+public:
+    int productID;
+    string productName;
+    string brand;
+    string category;
+    double rating;
+
+    void addProduct(int productID, string productName, string brand, string category, double rating)
+    {
+        this->productID = productID;
+        this->productName = productName;
+        this->brand = brand;
+        this->category = category;
+        this->rating = rating;
+    }
+
+    void displayProduct()
+    {
+        cout << "Product ID: " << productID << endl;
+        cout << "Product Name: " << productName << endl;
+        cout << "Brand: " << brand << endl;
+        cout << "Category: " << category << endl;
+        cout << "Rating: " << rating << endl;
+    }
+
+    void updateRating(double newRating)
+    {
+        rating = newRating;
+    }
+};

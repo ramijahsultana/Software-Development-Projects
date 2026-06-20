@@ -1,0 +1,26 @@
+class Review
+{
+public:
+    string customerName;
+    int rating;
+    string feedback;
+    bool verifiedPurchase;
+    int trustScore;
+    string status;
+
+    Review()
+    {
+        customerName = "";
+        rating = 0;
+        feedback = "";
+        verifiedPurchase = false;
+        trustScore = 100;
+        status = "Trusted";
+    }
+
+    void inputReview();
+
+    void calculateTrustScore();
+
+    void displayReview();
+};
